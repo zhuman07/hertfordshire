@@ -5,15 +5,145 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
-
+	header
+		.header_bg
+			.menu_left
+				li
+					margin-right: 20px
+			.menu_right
+				li
+					margin-left: 10px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
+	header
+		.header_bg
+			background-position: 50% 20%
+			height: auto
+			.menu_left
+				li
+					margin-right: 35px
+			.menu_right
+				li
+					margin-left: 35px
 
+	.site_title
+		height: 500px
+		background-size: cover
+		.site_title_content
+			padding: 90px 0
+			.site_title_content_inner
+				width: 590px
+				img
+					max-width: 300px
+				h1
+					font-size: em(46px)
+
+	.presents
+		margin: 20px 0
+		.present_item
+			height: 280px
+			width: 50%
+			margin: 5px 0
+			&:first-child
+				padding-left: 5px
+			&:last-child
+				padding-right: 5px
+
+	.footer_menu
+		ul
+			margin: 20px 0 0 0
+			text-align: center
+			li
+				display: inline-block
+				margin: 0 10px
+				&:last-child
+					margin-right: 0
+				a
+					color: #fff
+					text-transform: uppercase
+					display: block
+					transition: all .5s ease
+					&:hover
+						transform: scale(1.2)
+
+	section.best_places
+		margin: 20px 0
+		h2
+			width: 100%
+			padding: 0 15px
+			font-size: em(30px)
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	header
+		.header_bg
+			background-position: 50% 15%
+			.logo
+				text-align: center
+				margin-bottom: 25px
+			ul
+				margin: 0
+			.menu_left
+				text-align: center
+				li
+					margin: 10px 0 0 0
+					display: block
+			.menu_right
+				text-align: center
+				li
+					margin: 10px 0 0 0
+					display: block
+
+	nav
+		display: none
+
+	.mob-menu-icon
+		display: block
+
+	.site_title
+		height: 400px
+		background-size: cover
+		.site_title_content
+			padding: 50px 0
+			.site_title_content_inner
+				width: 480px
+				h1
+					font-size: em(26px)
+				a
+					&:after
+						display: none
+
+	.presents
+		.present_item
+			height: 250px
+			width: 315px
+			float: none
+			margin: 20px auto
+			padding: 20px 0
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+
+	footer
+		.footer_content
+			width: 280px
+			.footer_content_contacts
+				margin: 20px 0
+				padding-left: 40px
+
+	section.text_info
+		h2
+			font-size: em(30px)
+		.text_info_img
+			padding: 40px 40px 0 0
+			position: relative
+			&:before
+				width: calc(100% - 40px)
+				height: calc(100% - 40px)
+
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated
@@ -40,7 +170,27 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.site_title
+		height: 320px
+		.site_title_content
+			padding: 20px 0
+			.site_title_content_inner
+				width: 300px
+				h1
+					font-size: em(20px)
 
+	.presents
+		.present_item
+			width: 290px
+			height: 230px
+
+	.footer_bottom_text
+		padding: 0 20px
+		line-height: 1.2
+
+	section.best_places
+		h2
+			font-size: em(26px)
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

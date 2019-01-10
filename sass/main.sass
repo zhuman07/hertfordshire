@@ -28,7 +28,267 @@ body textarea:required:valid
 	color: #666
 
 //Custom Styles Here
+.site_title
+	text-align: center
+	position: relative
+	height: 750px
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-size: cover
+	.site_title_content
+		position: absolute
+		top: 0
+		width: 100%
+		height: 100%
+		padding: 190px 0
+		.site_title_content_inner
+			width: 890px
+			margin: 0 auto
+			color: #fff
+			text-transform: uppercase
+			img
+				max-width: 350px
+				width: 100%
+			h1
+				font-size: em(66px)
+				font-weight: lighter
+				line-height: 1
+				margin: 15px 0
+			a
+				&:after
+					content: ''
+					display: block
+					width: 40px
+					height: 40px
+					background-image: url('../img/icons/arrow.png')
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					position: absolute
+					bottom: -70px
+					left: 40%
 
+a.rectangle_button
+	color: #c5a455
+	display: inline-block
+	border: 2px solid #c5a455
+	padding: 10px 35px
+	transition: all .5s ease
+	position: relative
+	text-transform: uppercase
+	line-height: 1.2
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		width: 40px
+		height: 40px
+	&:hover
+		transform: scale(1.2)
+
+.presents
+	margin: 40px 0
+	&:after
+		content: ''
+		display: block
+		clear: both
+	.present_item
+		position: relative
+		height: 225px
+		padding: 20px 5px
+		width: 25%
+		float: left
+		text-align: center
+		transition: all .5s ease
+		&:first-child
+			padding-left: 0
+		&:last-child
+			padding-right: 0
+		&:hover
+			transform: scale(1.2)
+		.present_item_bg
+			//background-color: #6a251c
+			background-image: url('../img/header.jpg')
+			background-position: 50% 50%
+			//background-repeat: no-repeat
+			background-size: contain
+			width: 100%
+			height: 100%
+		a
+			display: block
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			padding: 0 20px
+			img
+				width: 100%
+			h2
+				display: inline-block
+				color: #fff
+				background-color: #c5a455
+				width: 200px
+				font-weight: lighter
+				font-size: em(16px)
+				text-transform: uppercase
+				padding: 10px 0
+
+footer
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 40px 0
+	.footer_content
+		width: 350px
+		margin: 0 auto
+		text-align: center
+		.footer_content_contacts
+			text-align: left
+			margin: 30px 0
+			a
+				color: #fff
+				font-weight: lighter
+				display: block
+				position: relative
+				transition: all .5s ease
+				&:hover
+					opacity: .6
+		.social_links
+			a.social_link
+				display: inline-block
+				width: 60px
+				height: 60px
+				background-repeat: no-repeat
+				background-position: 50% 50%
+				background-size: cover
+				transition: all .5s ease
+				margin: 0 20px
+				&.fb
+					background-image: url('../img/icons/fb.png')
+				&.insta
+					background-image: url('../img/icons/insta.png')
+				&:hover
+					opacity: .6
+
+
+span.icon
+	position: absolute
+	top: 0
+	left: -40px
+	display: block
+	width: 20px
+	height: 20px
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	background-size: cover
+	&.icon_address
+		background-image: url('../img/icons/1.png')
+	&.icon_contact
+		background-image: url('../img/icons/2.png')
+	&.icon_mail
+		background-image: url('../img/icons/3.png')
+
+.footer_menu
+	margin-top: 40px
+	.footer_menu_center
+		text-align: center
+	ul
+		list-style: none
+		margin: 10px 0 0 0
+		padding: 0
+		li
+			display: inline-block
+			margin-right: 35px
+			&:last-child
+				margin-right: 0
+			a
+				color: #fff
+				text-transform: uppercase
+				display: block
+				transition: all .5s ease
+				&:hover
+					transform: scale(1.2)
+
+.footer_bottom_text
+	color: #c5a455
+	text-transform: uppercase
+	text-align: center
+	margin-top: 30px
+
+section.text_info
+	padding: 20px 0
+	h2
+		font-size: em(50px)
+		font-weight: lighter
+		color: $main_color
+		text-transform: uppercase
+		margin: 0 0 20px 0
+		line-height: 1
+	p
+		color: black
+		line-height: 1.2
+	ul
+		list-style-image: url("../img/icons/checked.png")
+		padding: 0 0 0 28px
+		margin: 20px 0
+		li
+			line-height: 1.2
+			color: black
+			margin: 20px 0
+	.text_info_img
+		padding: 40px
+		position: relative
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			width: calc(100% - 80px)
+			height: calc(100% - 80px)
+			//background-color: $red
+			background-image: url('../img/header.jpg')
+			background-position: 50% 50%
+			//background-repeat: no-repeat
+			background-size: contain
+			top: 0
+			right: 0
+		img
+			width: 100%
+			position: relative
+			z-index: 1
+
+section.best_places
+	margin: 40px 0
+	h2
+		width: 850px
+		font-size: em(50px)
+		color: $main_color
+		text-align: center
+		font-weight: lighter
+		margin: 0 auto
+		line-height: 1.2
+	.best_place_item
+		p
+			line-height: 1.2
+		.best_place_item_info
+			text-align: center
+			margin: 40px 0
+			img
+				width: 150px
+				border-radius: 50%
+			span
+				display: block
+				font-size: em(66px)
+				color: $main_color
+				line-height: 1
+			p
+				margin: 5px 0 0 0
+				color: $main_color
+	.best_place_button
+		text-align: center
+		a.rectangle_button
+			&:hover
+				color: black
+				border-color: black
 
 //ALWAYS END
 @import "media"
